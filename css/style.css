@@ -1,0 +1,487 @@
+
+/* ------------------------------------------------------------
+This is a PSD template. I convert this to html css bootstrap jquery and js.
+Author: Mf Rabby
+Year: 6 June 2020.
+Web: https://mfrabby.com/
+ --------------------------------------------------------------*/
+/* 
+
+
+
+------------------------------------------------------------------
+Comon Css
+------------------------------------------------------------------
+ */
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1{
+    font-family: TitilliumWeb Bold;
+    font-size: 43px;
+    color: #fff;
+}
+
+h3{
+    padding: 30px 0px 60px 0px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h5{
+    font-size: 24px;
+}
+h6{
+    font-size: 18px;
+}
+
+.head-title{
+    padding-top: 118px;
+    font-weight: 700;
+    font-size: 43px;
+}
+
+.line{
+    position: relative;
+    height: 4px;
+    width: 88px;
+    background-color: #e5c37f;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.line:after{
+    position: absolute;
+    content: "";
+    right: -10px;
+    left: -10px;
+    height: 1px;
+    top: 1px;
+    z-index: -9;
+   
+}
+
+.btn{
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: .7s ease-out;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #000000;
+    border: 0.2px solid #111111;
+    transition: .7s ease-out;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    bottom: 60px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+/* -------------------------------- Navbar ----------------------- */
+.navbar{
+    padding: 10px 150px;
+ }
+
+.navbar .logo{
+    width: 100%;
+    height: 35px;
+}
+
+
+.navbar-nav .nav-item {
+    color: #fafdfd;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 8px 8px;
+}
+
+
+.navbar-nav .nav-item .active {
+    background-color: #643a79;
+    color: #fafdfd;
+    border: 1px solid #643a79;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-item a{
+    color: #fafdfd;
+}
+
+.navbar-nav .nav-item a:hover {
+    background-color: #643a79;
+    color: #fafdfd;
+    border: 1px solid #643a79;
+    border-radius: 6px;
+    transition: .3s ease-out;
+}
+
+
+.sticky{
+    top: 0; left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(156, 3, 177);
+    transition: all 2.5ms ease-out;
+}
+/* 
+------------------------------------------------------------------
+home Css start
+------------------------------------------------------------------
+ */
+.home{
+    background:linear-gradient(rgba(135,80,156,0.9),rgba(135,80,156,0.9)), url('../img/devport.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+
+.home .hero-section{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+}
+
+.home-btn{
+    background-color: #eb7d4b;
+    border-bottom: 2px solid #c86a40;
+}
+
+
+/* 
+------------------------------------------------------------------
+service area Css start
+------------------------------------------------------------------
+ */
+.service{
+    color: #fff;
+    background-color: #17c2a4;
+    padding-bottom: 120px;
+}
+
+.service .line{
+    background-color: #14a58c;
+}
+
+.service-sec{
+    padding-bottom: 70px;
+}
+
+.srv-img{
+    padding-bottom: 60px;
+}
+
+.h-p p{
+    font-size: 16px;
+}
+
+
+/* 
+------------------------------------------------------------------
+team area Css start
+------------------------------------------------------------------
+ */
+.team{
+    color: #3c4761;
+    background-color: #e7f1f8;
+    padding-bottom: 120px;
+}
+
+.team-padding{
+    padding-bottom: 75px;
+}
+
+.team .line{
+    background-color: #c8d9e5;
+}
+
+.team-social ul{
+    margin: 0 auto;
+}
+
+.team-social li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 8px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.team-social li:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.team-social li a{
+    text-decoration: none;
+}
+.team-social li a:hover{
+    color: rgb(245, 10, 213);
+}
+
+.card-body{
+    background-color: #e7f1f8;
+}
+
+.card-img-top{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card-text{
+    text-align: center;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.card-body h6{
+    color: #3cbee8;
+}
+.card-body h5{
+    font-size: 24px;
+}
+
+/* 
+------------------------------------------------------------------
+Skills area Css start
+------------------------------------------------------------------
+ */
+.skills{
+    background:linear-gradient(rgba(255, 251, 251, 0.9),rgba(255, 255, 255, 0.9)), url('../img/a1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 120px;
+}
+
+ .skils .line{
+    background-color: #c8d9e5;
+}
+
+.skills-sec{
+    padding-bottom: 80px;
+}
+
+.skills-sub-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/*
+-------------------progress bar css---------------------------------
+*/
+
+svg.radial-progress {
+    height: auto;
+    max-width: 200px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+  }
+  
+  svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #dfe8ed;
+    stroke-dashoffset: 219.91148575129; 
+    stroke-width: 10;
+  }
+  
+  svg.radial-progress circle.incomplete { opacity: 0.25; }
+  svg.radial-progress circle.incomplete { stroke: #dfe8ed; }
+  
+  svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; }
+  
+  svg.radial-progress text {
+    fill: #3c4761;
+    text-anchor: middle;
+  }
+
+  svg.web circle{
+       stroke:#30bae7;
+    }
+  svg.html circle{ 
+      stroke:#d74680;
+    }
+  svg.graphic circle{ 
+      stroke:#15c7a8;
+    }
+  svg.ui circle{ 
+      stroke:#eb7d4b;
+    }
+/* 
+------------------------------------------------------------------
+recent section Css start
+------------------------------------------------------------------
+ */
+
+
+.portfolio{
+    background-color: #ffdd99;
+    overflow: hidden;
+    padding-bottom: 110px;
+}
+
+.blt{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    
+}
+
+.bullet{
+    border: none;
+    border-radius: 5px;
+    padding: 6px 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-weight: 400;
+    background-color: #ebc985;
+}
+
+.bullet:hover{
+    border: none;
+    padding: 8px 28px;
+    background-color: #fff;
+}
+
+.active{
+    background-color: #fff;
+}
+
+.project_btn{
+    border: 1px solid #1eb397;;
+    background-color: #17c2a4;
+    border-bottom: 2px solid #1eb397;
+    padding: 10px 25px;
+}
+
+/* 
+------------------------------------------------------------------
+testimonial section Css start
+------------------------------------------------------------------
+ */
+
+.testimonial{
+
+    color: #fff;
+    padding-bottom: 20px;
+    background:linear-gradient(rgba(238, 2, 238, 0.9),rgba(238, 2, 238, 0.9)), url('../img/a1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonial-sec{
+    padding-bottom: 50px;
+}
+
+.testimonial .line{
+    background-color: #b73c6d;
+}
+
+
+.timg{
+    height: 96px;
+    width: 96px;
+    border-radius: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 150px;
+}
+
+.media-body{
+    font-style: italic;
+    text-align: left;
+}
+
+.media-body .name{
+    font-weight: 700;
+}
+.media-body h6{
+    color: #fac996;
+    padding: 0;
+}
+
+/* 
+------------------------------------------------------------------
+Footer area Css start
+------------------------------------------------------------------
+ */
+ .footer{
+    color: #fff;
+    background-color: #3c5499;
+}
+
+
+.footer .line{
+    background-color: #273a71;
+}
+.footer_btn{
+    background-color: #30bae7;
+    border-bottom: 2px solid #089ecf;
+}
+
+.footer_btn-padding{
+    padding-top:55px;
+    padding-bottom:110px;
+}
+
+
+.bottom-footer{
+    border: 1px solid #3c5499;
+    background-color: #344b8e;
+}
+
+.bottom-footer ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+.bottom-footer ul li{
+    display: inline;
+    padding: 0px 15px;
+    font-size: 16px;
+    font-family: TitilliumWeb SemiBold;
+    transition: all 0.3ms;
+}
+.bottom-footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+/* -------------- --------------- finished -------------- ------------------- */
